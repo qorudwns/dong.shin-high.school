@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>광주동신고등학교 — 공식 홍보 사이트</title>
+  <meta name="description" content="광주동신고등학교 공식 홍보 웹사이트. 입학 안내, 교육과정, 캠퍼스 라이프, 공지사항 정보를 제공합니다.">
+  <meta name="theme-color" content="#0f8a4b">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="광주동신고 홈">
+        <img src="assets/favicon.svg" alt="" class="logo" />
+        <span>광주동신고등학교</span>
+      </a>
+      <button class="btn ghost menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="모바일 메뉴">메뉴</button>
+      <nav id="menu" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#about">학교 소개</a></li>
+          <li><a href="#programs">교육과정</a></li>
+          <li><a href="#life">캠퍼스 라이프</a></li>
+          <li><a href="#news">공지·소식</a></li>
+          <li><a href="#admission" class="badge">입학 안내</a></li>
+          <li><a href="#contact">문의</a></li>
+          <li><button class="btn ghost" id="modeBtn" type="button" aria-pressed="false" title="다크모드 전환">🌗</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">학생 중심 · 창의융합 · 성장</p>
+          <h1><span class="grad">광주동신고등학교</span> 홍보 사이트</h1>
+          <p class="sub">학부모와 예비 신입생을 위한 핵심 정보를 한곳에 모았습니다.</p>
+          <div class="cta">
+            <a class="btn" href="#admission">입학안내 바로가기</a>
+            <a class="btn ghost" href="#contact">상담 문의</a>
+          </div>
+        </div>
+        <div class="card hero-art" role="img" aria-label="캠퍼스 일러스트 배경"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>학교 소개</h2>
+      <p>광주동신고등학교는 바른 인성과 깊이 있는 학문을 겸비한 인재 양성을 목표로 합니다. 학생 개개인의 진로와 적성에 맞춰 다양한 교육과정을 제공합니다.</p>
+      <div class="grid-3 quick">
+        <a class="feature" href="#admission"><strong>입학 전형 요약</strong><br><small>일정·서류·평가</small></a>
+        <a class="feature" href="#programs"><strong>교육과정/학과</strong><br><small>일반·융합·동아리</small></a>
+        <a class="feature" href="#life"><strong>캠퍼스 라이프</strong><br><small>동아리·행사·시설</small></a>
+      </div>
+    </section>
+
+    <section id="programs" class="section container">
+      <h2>교육과정</h2>
+      <div class="grid-3">
+        <article class="feature"><h3>일반 교과</h3><p>국영수탐 기초를 다지는 표준 교육과정과 심화·선택 과목을 연계합니다.</p></article>
+        <article class="feature"><h3>융합 프로젝트</h3><p>수학·과학·인문을 아우르는 창의융합 활동 및 연구 활동을 운영합니다.</p></article>
+        <article class="feature"><h3>동아리/특색</h3><p>나도사업가, 과학탐구, 음악·미술 등 학생 주도 활동을 지원합니다.</p></article>
+      </div>
+    </section>
+
+    <section id="life" class="section container">
+      <h2>캠퍼스 라이프</h2>
+      <div class="grid-2 gallery">
+        <div class="imgbox"></div>
+        <div class="imgbox"></div>
+      </div>
+    </section>
+
+    <section id="news" class="section container">
+      <h2>공지 · 소식</h2>
+      <div id="newsList" class="news-list" aria-live="polite"></div>
+      <noscript>자바스크립트를 활성화하면 최신 공지를 볼 수 있습니다.</noscript>
+    </section>
+
+    <section id="admission" class="section container">
+      <h2>입학 안내</h2>
+      <div class="grid-2">
+        <div class="feature">
+          <h3>전형 요약</h3>
+          <ul>
+            <li>지원 자격 · 전형 일정</li>
+            <li>제출 서류 · 평가 요소</li>
+            <li>자주 묻는 질문(FAQ)</li>
+          </ul>
+          <a class="btn" href="#contact">상담 신청</a>
+        </div>
+        <details class="feature">
+          <summary><strong>FAQ</strong></summary>
+          <ul>
+            <li>입학설명회 신청: 상단 버튼 또는 문의 폼</li>
+            <li>학교 투어: 일정에 따라 사전 신청</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>문의</h2>
+      <form id="contactForm" novalidate>
+        <div class="grid-2">
+          <label>이름
+            <input name="name" placeholder="홍길동" required />
+          </label>
+          <label>이메일
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+        <label>문의 유형
+          <select name="type" required>
+            <option value="" disabled selected>선택하세요</option>
+            <option value="admission">입학상담</option>
+            <option value="program">교육과정</option>
+            <option value="life">학교생활</option>
+            <option value="etc">기타</option>
+          </select>
+        </label>
+        <label>메시지
+          <textarea name="message" rows="5" placeholder="문의 내용을 적어주세요" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn" type="submit">보내기</button>
+          <span class="kbd" title="단축키">Ctrl/⌘ + Enter</span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <small>© <span id="year"></span> 광주동신고등학교. All rights reserved.</small>
+      <a href="#top" id="toTop">맨 위로 ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">업데이트되었습니다 ✅</div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
